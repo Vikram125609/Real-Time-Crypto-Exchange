@@ -1,0 +1,184 @@
+@import url(./utils.css);
+html
+{
+    font-size: 10px;
+}
+*
+{
+    padding: 0px;
+    margin: 0px;
+    font-family: var(--font-family3);
+}
+
+
+/* Styling of navigation bar */
+.header
+{
+    padding: 2rem;
+    background-color: var(--gray-dark);
+}
+.header .nav-bar .nav-left img
+{
+    width: 20rem;
+}
+.header .nav-bar .nav-left p
+{
+    margin: 0px;
+    font-size: 2rem;
+    color: lightgray;
+    font-family: var(--font-family3);
+}
+.header .nav-bar .nav-left p span
+{
+    color: #32c6d0;
+    font-size: 3rem;
+    font-family: var(--font-family3);
+}
+.header .nav-bar .nav-right .signUp
+{
+    width: 25rem;
+    background-color: whitesmoke;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 12px;
+    margin:2px;
+}
+.header .nav-bar 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .nav-bar .nav-right .signUp img
+{
+    width: 2.5rem;
+}
+.header .nav-bar .nav-right .signUp a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+}
+
+/* This is for google authentication */
+
+/* Styling of the sign up content */
+/* .container
+{
+    padding: 70px;
+    font-size: 2rem;
+}
+.container a
+{
+    font-size: 2rem;
+} */
+
+
+/* Styling of the registration form */
+.register input
+{
+    display: block;
+    width: 30rem;
+    padding: 1rem;
+    margin: 1rem auto;
+}
+.register .form button
+{
+    width: 30rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+.register
+{
+    margin-top: 12px ;
+    border: solid;
+}
+.form
+{
+    width: 30rem;
+    margin: auto;
+}
+.invalidDetails
+{
+    color: red;
+    margin: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+.verify
+{
+    padding: 10rem;
+    width: 60rem;
+    margin: auto;
+}
+.verify .heading
+{
+    text-align: center;
+}
+.verify form
+{
+
+    width: fit-content;
+    /* border: solid; */
+    margin: auto;
+    padding: 5rem;
+}
+.verify form input
+{
+    padding: 1rem;
+}
+.verify form button
+{
+    width: 10rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+.invalidOTP
+{
+    color: red;
+}
+/* This is the media query for responsive sites */
+@media (max-width: 1000px) {
+    td,th{
+        padding: 1rem;
+    }
+  }
+@media (max-width: 800px) {
+    td,th{
+        padding: 0.5rem;
+    }
+  }
+@media (max-width: 750px) {
+    td,th{
+        padding: 0rem;
+    }
+  }
+@media (max-width: 650px) {
+    html{
+        font-size: 8px;
+    }
+}
+@media (max-width: 550px) {
+    html{
+        font-size: 7px;
+    }
+}
+@media (max-width: 500px) {
+    html{
+        font-size: 6px;
+    }    
+}
+@media (max-width: 420px) {
+    html{
+        font-size: 5px;
+    }    
+}
+@media (max-width: 350px) {
+    html{
+        font-size: 3.5px;
+    }    
+}
+

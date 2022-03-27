@@ -1,0 +1,16 @@
+const express = require('express');
+const apiController = require('../Controllers/apiController');
+const loginController = require('../Controllers/loginController');
+const signupController = require('../Controllers/signupController');
+const verifyController = require('../Controllers/verifyController');
+const app = express();
+const router = express.Router();
+router.get('/',apiController().index);
+router.get('/signup',signupController().signup);
+router.post('/signup',signupController().registerSignup);
+router.get('/login',loginController().login);
+router.post('/login',loginController().postLogin);
+router.get('/verify',verifyController().verify);
+router.post('/verify',verifyController().postverify);
+// router.get('/pages',dataController().pages);
+module.exports = router;
